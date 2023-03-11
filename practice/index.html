@@ -1,0 +1,69 @@
+<!-- 1 container - which should be in middle if the page
+you just split it into 2 halves - vertically
+left half. -  just input a button
+
+right half - use an anchor tag which is looking like the button 
+button in left half
+U need to modify your code into react components
+
+Hint-  your 2 halves are identical
+so u need to make a reusable component -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+
+      #maincontainer {
+        border: 2px solid red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 75%;
+        gap: 10px;
+      }
+
+      #leftcontainer {
+        border: 2px solid green;
+      }
+      #rightcontainer {
+        border: 2px solid orange;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+        border: 1px solid black;
+      }
+
+      #outside{
+        height: 100vh;
+        margin: auto;
+        width: 100%;
+        border: 2px solid green;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Page</h2>
+    <div id="outside">
+    <div id="maincontainer">
+      <div id="leftcontainer">
+        <h2>Left Container</h2>
+        <input type="button" value="Button" />
+      </div>
+      <div id="rightcontainer">
+        <h2>Right Container</h2>
+        <a href="#">Button</a>
+      </div>
+    </div>
+</div>
+  </body>
+</html>
